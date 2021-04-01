@@ -9,4 +9,6 @@
     }
 
     public record Price(int Amount, int Discount);
+
+    public record Money(int Amount);
 }
