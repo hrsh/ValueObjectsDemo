@@ -2,13 +2,17 @@
 {
     public class Size
     {
-        public double ShoeSize { get; }
+        public Dimension H { get; }
 
-        public Size(double shoeSize) =>
-            ShoeSize = shoeSize;
+        public Dimension W { get; }
+
+        public Dimension L { get; }
+
+        public Size(Dimension h, Dimension w, Dimension l)
+        {
+            H = h;
+            W = w;
+            L = l;
+        }
     }
-
-    public record Price(int Amount, int Discount);
-
-    public record Money(int Amount);
 }
